@@ -9,4 +9,6 @@ module.exports = {
 
   // Static files that get copied to build folder
   public: path.resolve(__dirname, '../public'),
+
+  favicons: path.resolve(__dirname, '../src/assets/favicons'),
 }

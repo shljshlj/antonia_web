@@ -56,7 +56,12 @@ module.exports = {
           from: paths.public,
           to: '.',
           noErrorOnMissing: true,
-        }
+        },
+        {
+          from: paths.favicons,
+          to: 'favicons',
+          noErrorOnMissing: true,
+        },
       ]
     })
   ],
