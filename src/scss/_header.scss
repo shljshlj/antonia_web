@@ -1,0 +1,204 @@
+header {
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  min-height: 100vh;
+  margin: auto;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 8vmin;
+
+  .page-title {
+    // align-self: center;
+    position: relative;
+    font-weight: 700;
+    font-size: 2em;
+    // line-height: 1em;
+    line-height: 0.8em;
+    // letter-spacing: -0.1em;
+    letter-spacing: -0.15em;
+    padding-bottom: 0.5em;
+    padding-left: 0.05em;
+
+    .second-row {
+      // padding-left: 0.2em;
+      margin-top: 0.04em;
+    }
+    .third-row {
+      // padding-left: 0.1em;
+    }
+
+    .row {
+      $color1: rgb(255, 73, 73);
+      $color2: orange;
+      $color3: pink;
+      $color4: #ffeb3b;
+      $color5: #2196f3;
+
+      $color1a: #c45882;
+      $color2a: #c65b65;
+      $color3a: #c9745e;
+      $color4a: #cb9761;
+      $color5a: #cdb963;
+
+      &.first-row {
+        span:nth-child(5n - 4) {
+          background: linear-gradient(to bottom, $color1, $color1a);
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        span:nth-child(5n - 3) {
+          background: linear-gradient(to bottom, $color2a, $color2);
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        span:nth-child(5n - 2) {
+          background: linear-gradient(to bottom, $color3a, $color3);
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        span:nth-child(5n - 1) {
+          background: linear-gradient(to bottom, $color4a, $color4);
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        span:nth-child(5n) {
+          background: linear-gradient(to bottom, $color5a, $color5);
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+
+      &.third-row {
+        span:nth-child(5n - 2) {
+          background: linear-gradient(to bottom, $color1, $color1a);
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        span:nth-child(5n - 1) {
+          background: linear-gradient(to bottom, $color2a, $color2);
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        span:nth-child(5n - 3) {
+          background: linear-gradient(to bottom, $color3a, $color3);
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        span:nth-child(5n) {
+          background: linear-gradient(to bottom, $color4a, $color4);
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        span:nth-child(5n - 4) {
+          background: linear-gradient(to bottom, $color5a, $color5);
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+
+      &.second-row {
+        span:nth-child(5n - 3) {
+          background: linear-gradient(to bottom, $color1, $color1a);
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        span:nth-child(5n - 2) {
+          background: linear-gradient(to bottom, $color2a, $color2);
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        span:nth-child(5n) {
+          background: linear-gradient(to bottom, $color3a, $color3);
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        span:nth-child(5n - 4) {
+          background: linear-gradient(to bottom, $color4a, $color4);
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        span:nth-child(5n - 1) {
+          background: linear-gradient(to bottom, $color5a, $color5);
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+
+      span {
+        // padding-right: 0.1em;
+        padding-right: 0.15em;
+        padding-bottom: 0.1em;
+        // margin-left: -0.1em;
+        margin-left: -0.15em;
+      }
+    }
+  }
+
+  .description {
+    max-width: 70ch;
+    font-size: clamp(18px, 3vmin, 24px);
+    align-self: flex-end;
+  }
+}
+
+.star {
+  position: absolute;
+
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  &-1 {
+    width: 0.8em;
+    height: 0.8em;
+    top: -0.8em;
+    right: 0.4em;
+  }
+
+  &-2 {
+    width: 1em;
+    height: 1em;
+    top: 0.1em;
+    right: 0.1em;
+  }
+
+  &-3 {
+    width: 1.2em;
+    height: 1.2em;
+    top: -0.6em;
+    right: -0.4em;
+  }
+}

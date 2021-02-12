@@ -1,0 +1,39 @@
+{
+  "name": "nanny-berlin",
+  "version": "2.0.0",
+  "description": "Personal website of a nanny living in Berlin",
+  "main": "index.js",
+  "repository": "git@github.com:shljshlj/antonia_v2.git",
+  "author": "shljshlj <34565607+shljshlj@users.noreply.github.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "NODE_ENV=development webpack serve --config config/webpack.dev.js",
+    "build": "NODE_ENV=production webpack --config config/webpack.prod.js",
+    "build-gh": "NODE_ENV=production webpack --config config/webpack.prod-gh.js",
+    "deploy-gh": "gh-pages -d dist",
+    "gh": "yarn run build-gh && yarn run deploy-gh"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^7.0.0",
+    "css-loader": "^5.0.1",
+    "css-minimizer-webpack-plugin": "^1.1.5",
+    "file-loader": "^6.2.0",
+    "gh-pages": "^3.1.0",
+    "html-loader": "^1.3.2",
+    "html-webpack-plugin": "^5.0.0-beta.4",
+    "mini-css-extract-plugin": "^1.3.3",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.1.0",
+    "style-loader": "^2.0.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.1",
+    "webpack-dev-server": "^3.11.1",
+    "webpack-merge": "^5.7.3"
+  }
+}
