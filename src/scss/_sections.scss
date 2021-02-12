@@ -81,9 +81,14 @@
     }
 
     &--right {
-      top: -3em;
-      right: 3vw;
-      width: 30vw;
+      top: -4em;
+      right: 1vw;
+      width: 40vw;
+
+      @media (min-width: 768px) {
+        right: 3vw;
+        width: 30vw;
+      }
 
       @media (min-width: 1024px) {
         top: 20vh;
