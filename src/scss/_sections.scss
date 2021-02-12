@@ -168,6 +168,7 @@
     height: 70px;
     display: flex;
     justify-content: center;
+    overflow: hidden;
 
     @media (min-width: 1024px) {
       height: 100px;
